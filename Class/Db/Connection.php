@@ -18,7 +18,7 @@ class Class_Db_Connection {
     /**
      * @return mixed
      */
-    public function getİp()
+    public function getIp()
     {
         return $this->_ip;
     }
@@ -26,7 +26,7 @@ class Class_Db_Connection {
     /**
      * @param mixed $ip
      */
-    public function setİp($ip)
+    public function setIp($ip)
     {
         $this->_ip = $ip;
     }
