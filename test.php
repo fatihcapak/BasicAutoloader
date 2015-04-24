@@ -3,9 +3,9 @@
 require_once 'autoload.php';
 
 $connection = new Class_Db_Connection();
-$connection->setİp('127.0.0.1');
+$connection->setIp('127.0.0.1');
 
-echo $connection->getİp(). '<br>';
+echo $connection->getIp(). '<br>';
 
 $db = new Class_Payment_Base_Bank();
 $db->setBankId('g5F19-97bsm');
