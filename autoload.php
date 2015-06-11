@@ -21,6 +21,11 @@ function __autoload($className)
     if ($requireUrl) {
         $requireUrl .= $class[count($class)-1].'.php';
 
-        require_once __DIR__. $requireUrl;
+        if (file_exists(__DIR__. $requireUrl)){
+            require_once __DIR__. $requireUrl;
+        } else {
+            echo __DIR__. $requireUrl . ' did not include.';
+            return;
+        }
     }
 }
